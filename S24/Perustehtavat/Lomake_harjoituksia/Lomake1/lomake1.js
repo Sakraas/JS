@@ -4,9 +4,9 @@ function jarjesta () {
     taulukko[1] = parseInt(document.getElementById("toka").value);
     taulukko[2] = parseInt(document.getElementById("kolme").value);
 
-    document.write("Annoit luvut: " + taulukko);
+    document.getElementById("vastaus").innerHTML = "Annoit luvut: " + taulukko;
 
     taulukko.sort(function(a, b){return a-b});
 
-    document.write("<br />Luvut järjestyksessä: " + taulukko);
+    document.getElementById("vastaus2").innerHTML = "Luvut järjestyksessä: " + taulukko;
 }

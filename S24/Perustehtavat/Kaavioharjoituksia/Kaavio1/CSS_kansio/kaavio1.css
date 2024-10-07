@@ -1,0 +1,17 @@
+main {
+    margin: 0 auto;
+    background-color: rgb(90, 189, 40);
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+}
+h1 {
+    font-size: large;
+}
+button {
+    margin: 10px 0 0 77px;
+}
+p {
+    margin: 0 0 0 77px;
+    color: white;
+}

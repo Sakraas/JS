@@ -1,0 +1,11 @@
+main {
+    margin: 0 auto;
+    background-color: gold;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 20px;
+}
+button {
+    margin: 10px 0 0 158px;
+}

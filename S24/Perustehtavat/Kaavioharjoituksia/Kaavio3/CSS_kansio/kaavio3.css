@@ -1,0 +1,11 @@
+main {
+    margin: 0 auto;
+    height: 160px;
+    width: 400px;
+    background-image: linear-gradient(to left, gold, red);
+    padding: 20px;
+    border-radius: 20px;
+}
+button {
+    margin: 10px 0 0 112px;
+}

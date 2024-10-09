@@ -1,9 +1,13 @@
-function tarkista(){
-    var arvo = document.getElementById("vuodet").value;
-    if((0 == arvo % 4)&&(0 != arvo % 100) || (0 == arvo % 400)){
-        document.getElementById("vastaus").innerHTML = "Kyllä, vuosi:" + arvo + ", on karkausvuosi"
+function tarkista() {
+    const vuosi = parseInt(document.getElementById("vuodet").value);
+    let vastaus = "";
+
+    if (isNaN(vuosi)) {
+        vastaus = "Syötä kelvollinen vuosiluku.";
+    } else {
+        const onKarkausvuosi = (vuosi % 4 === 0 && vuosi % 100 !== 0) || (vuosi % 400 === 0);
+        vastaus = onKarkausvuosi ? vuosi + " on karkausvuosi." : vuosi + " ei ole karkausvuosi.";
     }
-    else {
-        document.getElementById("vastaus").innerHTML = "Ei, vuosi:" + arvo + ", ei ole karkausvuosi"
-    }
+
+    document.getElementById("vastaus").innerHTML = vastaus;
 }

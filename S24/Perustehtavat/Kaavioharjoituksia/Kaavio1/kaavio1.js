@@ -1,9 +1,16 @@
 function tarkista() {
-    let arvo = document.getElementById("luku").value;
-    if(arvo >= 0){
-        document.getElementById("vastaus").innerHTML = "Lukusi on positiivinen";
+    const luku = parseFloat(document.getElementById("luku").value);
+    let vastaus = "";
+
+    if (isNaN(luku)) {
+        vastaus = "Syötä kelvollinen luku.";
+    } else if (luku > 0) {
+        vastaus = luku + " on positiivinen luku.";
+    } else if (luku < 0) {
+        vastaus = luku + " on negatiivinen luku.";
+    } else {
+        vastaus = "Luku on nolla.";
     }
-    else{
-        document.getElementById("vastaus").innerHTML = "Antamasi luku on negatiivinen";
-    }
+
+    document.getElementById("vastaus").innerHTML = vastaus;
 }

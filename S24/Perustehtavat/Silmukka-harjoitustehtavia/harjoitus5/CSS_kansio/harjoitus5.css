@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif; /* Määritetään fontti */
+    background-color: #f4f4f4; /* Taustaväri */
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 600px; /* Maksimileveys */
+    margin: auto; /* Keskitetään sisältö */
+    background: white; /* Valkoinen tausta */
+    padding: 20px; /* Sisätilat */
+    border-radius: 8px; /* Pyöristetyt kulmat */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Varjo efekti */
+}
+
+h3 {
+    color: #333; /* Otsikon väri */
+}
+
+p {
+    color: #555; /* Tekstin väri */
+    line-height: 1.6; /* Riviväli */
+}
+
+button {
+    background-color: #4CAF50; /* Painikkeen taustaväri */
+    color: white; /* Tekstin väri */
+    border: none; /* Ilman reunusta */
+    padding: 10px 15px; /* Sisätilat */
+    text-align: center; /* Keskitetään teksti */
+    text-decoration: none; /* Ei alleviivausta */
+    display: inline-block; /* Inline-elementti */
+    font-size: 16px; /* Fonttikoko */
+    margin: 10px 0; /* Marginaalit ylös ja alas */
+    border-radius: 5px; /* Pyöristetyt kulmat */
+    cursor: pointer; /* Käden osoitin */
+    transition: background-color 0.3s; /* Siirtymäefekti */
+}
+
+button:hover {
+    background-color: #45a049; /* Taustavärin muutos hover-tilassa */
+}
+
+#vastaus {
+    margin-top: 20px; /* Marginaali ylös */
+    font-size: 14px; /* Fonttikoko */
+    color: #333; /* Värin määrittely */
+    white-space: pre-wrap; /* Säilytetään rivinvaihdot */
+}

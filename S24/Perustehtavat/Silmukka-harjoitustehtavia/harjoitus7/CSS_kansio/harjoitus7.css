@@ -1,0 +1,56 @@
+/* Kehys ja tausta */
+body {
+    font-family: 'Arial', sans-serif; /* Fontti koko sivulle */
+    background-color: #e0f7fa; /* Vaaleansininen tausta */
+    margin: 0; /* Poistaa oletusmarginaalit */
+    padding: 20px; /* Lisää sisätilaa */
+}
+
+/* Pääsisältöalue */
+main {
+    max-width: 600px; /* Määrittää maksimileveyden */
+    margin: auto; /* Keskittää sisällön */
+    background: white; /* Valkoinen tausta */
+    padding: 30px; /* Lisää sisätilaa */
+    border-radius: 10px; /* Pyöristää kulmat */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Lisää varjon */
+    text-align: center; /* Keskittää tekstin */
+}
+
+/* Otsikkotyylit */
+h3 {
+    color: #00796b; /* Tumma turkoosi väri */
+    font-size: 24px; /* Otsikon koko */
+}
+
+/* Kappaletekstin tyylit */
+p {
+    color: #555; /* Tummanharmaa väri */
+    font-size: 18px; /* Kappaletekstin koko */
+}
+
+/* Napin tyylit */
+button {
+    background-color: #00796b; /* Tumma turkoosi tausta */
+    color: white; /* Valkoinen teksti */
+    border: none; /* Poistaa napin reunat */
+    padding: 12px 20px; /* Lisää sisätilaa napille */
+    border-radius: 5px; /* Pyöristää kulmat */
+    cursor: pointer; /* Muuttaa osoittimen nappia kohdatessa */
+    font-size: 18px; /* Napin teksti koko */
+    transition: background-color 0.3s, transform 0.2s; /* Animaatiot hover-tilassa */
+}
+
+/* Napin hover-tyylit */
+button:hover {
+    background-color: #004d40; /* Tumma sävy hover-tilassa */
+    transform: scale(1.05); /* Pieni suurennos hover-tilassa */
+}
+
+/* Tulostusalueen tyylit */
+#tulostaVastaus {
+    margin-top: 20px; /* Lisää ylhäältä marginaalia */
+    font-size: 20px; /* Tulostusalueen teksti koko */
+    color: #00796b; /* Tumma turkoosi väri */
+    font-weight: bold; /* Kappaleteksti lihavoitu */
+}

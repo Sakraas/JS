@@ -1,0 +1,86 @@
+Kehys ja tausta
+body {
+    font-family: 'Arial', sans-serif; /* Fontti koko sivulle */
+    background: radial-gradient(circle, #e0f7fa, #b2ebf2); /* Kaunis säteittäinen liukuväri */
+    margin: 0; /* Poistaa oletusmarginaalit */
+    padding: 20px; /* Lisää sisätilaa */
+}
+
+/* Pääsisältöalue */
+main {
+    max-width: 500px; /* Määrittää maksimileveyden */
+    margin: auto; /* Keskittää sisällön */
+    background: white; /* Valkoinen tausta */
+    padding: 30px; /* Lisää sisätilaa */
+    border-radius: 15px; /* Pyöristää kulmat */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3); /* Syvempi varjo */
+    text-align: center; /* Keskittää tekstin */
+    transition: transform 0.3s, box-shadow 0.3s; /* Animaatio muutoksille */
+}
+
+/* Muutos hover-tilassa */
+main:hover {
+    transform: translateY(-5px); /* Nostaa pääsisältöä hover-tilassa */
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.5); /* Syvempi varjo hover-tilassa */
+}
+
+/* Otsikkotyylit */
+h3 {
+    color: #00695c; /* Syvä vihreä väri */
+    font-size: 30px; /* Otsikon koko */
+    margin-bottom: 20px; /* Lisää alapuolelle tilaa */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Varjostus otsikolle */
+}
+
+/* Kappaletekstin tyylit */
+p {
+    color: #444; /* Tumma harmaa väri */
+    font-size: 18px; /* Kappaletekstin koko */
+    margin-bottom: 20px; /* Lisää alapuolelle tilaa */
+}
+
+/* Syöttökentän tyylit */
+input[type="text"] {
+    width: calc(100% - 20px); /* Täyttää koko leveys, jättäen tilaa reunuksille */
+    padding: 12px; /* Lisää sisätilaa */
+    margin-bottom: 15px; /* Lisää alapuolelle tilaa */
+    border: 2px solid #00796b; /* Turkoosi reuna */
+    border-radius: 5px; /* Pyöristää kulmat */
+    font-size: 16px; /* Fonttikoko */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Animaatiot */
+}
+
+/* Syöttökentän focus-tyylit */
+input[type="text"]:focus {
+    border-color: #004d40; /* Tumma turkoosi focus-tilassa */
+    box-shadow: 0 0 8px rgba(0, 121, 191, 0.5); /* Lisää varjo focus-tilassa */
+    outline: none; /* Poistaa oletuskehykset */
+}
+
+/* Napin tyylit */
+button {
+    background-color: #00796b; /* Turkoosi tausta */
+    color: white; /* Valkoinen teksti */
+    border: none; /* Poistaa napin reunat */
+    padding: 14px 25px; /* Lisää sisätilaa napille */
+    border-radius: 5px; /* Pyöristää kulmat */
+    cursor: pointer; /* Muuttaa osoittimen nappia kohdatessa */
+    font-size: 18px; /* Napin teksti koko */
+    transition: background-color 0.3s, transform 0.2s; /* Animaatiot */
+}
+
+/* Napin hover-tyylit */
+button:hover {
+    background-color: #004d40; /* Tumma sävy hover-tilassa */
+    transform: scale(1.05); /* Suurentaa nappia hover-tilassa */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Lisää varjo hover-tilassa */
+}
+
+/* Tulostusalueen tyylit */
+#tulostaVastaus {
+    margin-top: 20px; /* Lisää ylhäältä marginaalia */
+    font-size: 20px; /* Tulostusalueen teksti koko */
+    color: #00796b; /* Turkoosi väri */
+    font-weight: bold; /* Kappaleteksti lihavoitu */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Varjostus tulokselle */
+}

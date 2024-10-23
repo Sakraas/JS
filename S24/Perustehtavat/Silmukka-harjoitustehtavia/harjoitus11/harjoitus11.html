@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_kansio/harjoitus11.css">
+    <title>Harjoitus 11</title>
+</head>
+<body>
+    <main>
+        <h3>Ohjelma etsii parilliset numerot</h3>
+        <p>Tämä on ohjelma, joka pyytää käyttäjältä kahta numeroa (jälkimmäisen tulee olla isompi) ja tulostaa tuolla välillä parilliset ja parittomat numerot sekä niiden summat</p>
+        <label for="num1">Syötä pienempi numero: </label>
+        <input type="number" name="num1" id="num1" /><br />
+        <label for="num2">Syötä suurempi numero: </label>
+        <input type="number" name="num2" id="num2" /><br />
+        <button type="button" name="button" onclick="laske()">Näytä parilliset ja paritton erikseen, sekä niiden summa</button>
+        <p id="tulostaVastaus"></p>
+    </main>
+</body>
+    <script type="text/javascript" src="harjoitus11.js"></script>
+</html>

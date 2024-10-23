@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS_kansio/harjoitus3.css">
+    <title>Harjoitus 3</title>
+</head>
+<body>
+    <main>
+        <h3>Taulukkomuunnin</h3>
+        <p>Tämä on ohjelma, joka muuntaa määritetyn 2-ulotteisen taulukon taulukkomuotoon.</p>
+        <p>Syötä rivit muodossa: 1,2,1,24 (rivit erotetaan pilkulla).</p>
+        
+        <label for="taulukonRivit">Anna taulukon rivit (erota rivit uudella rivillä):</label><br />
+        <textarea id="taulukonRivit" rows="5" cols="30" placeholder="Esim. 1,2,1,24&#10;8,11,9,4&#10;7,0,7,27"></textarea><br />
+        
+        <button type="button" name="button" onclick="muunna()">Muunna taulukoksi</button>
+        <p id="vastaus"></p>
+    </main>
+</body>
+    <script type="text/javascript" src="harjoitus3.js"></script>
+</html>

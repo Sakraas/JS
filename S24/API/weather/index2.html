@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sää ja Kartta</title>
+    <style>
+        #map {
+            height: 500px; /* Määrittele kartan korkeus */
+            width: 100%;   /* Määrittele kartan leveys */
+        }
+    </style>
+</head>
+<body>
+    <h2>Sää ja Kartta</h2>
+    
+    <!-- Syötteet ja sää -->
+    <input type="text" id="city" placeholder="Syötä paikkakunta">
+    <button onclick="saa()">Hae sää</button>
+    
+    <p id="v1"></p>
+
+    <!-- Kartan alue -->
+    <div id="map"></div>
+
+    <!-- Google Mapsin API: lataa se ulkoisesta tiedostosta -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=INSERT_YOUR_API_KEY&callback=initMap&libraries=&v=weekly" async defer></script>
+
+    <!-- JavaScript-tiedosto -->
+    <script src="script2.js"></script>
+</body>
+</html>
